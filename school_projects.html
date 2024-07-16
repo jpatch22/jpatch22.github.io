@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .indented-img {
+            margin-left: 200px;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,12 +25,21 @@
     <section>
         <article>
             <h3>Deploying Machine Learning Networks on AMD Xilinx VCK5000 FPGA - Sponsored by MDA Space</h2>
+                <img src="images/demo_app.png"alt="Front page of demo application" 
+                style="width: 300px; height: 320px;" class="indented-img">
                 <ul>
-                    <li>Developed a GUI in Python Using Tkinter to run model predictions and labelling. <a
+                    <li>Developed a GUI in Python Using Tkinter to run model predictions and labelling. Interactive as you moved
+                        your mouse over different parts of the image, showed the labels.<a
                             href="https://github.com/jpatch22/2364Capstone" target="_blank"
                             rel="noopener noreferrer">Github</a> </li>
                     <li>Worked on setting up VCK5000 and figuring out how to run different models on the DPU. Worked on
                         Quantisation, Deployment of models and more.</li>
+                    <li>Integrated Running Models on the application with the GUI. Implemented batch processing to the DPU, to demonstrate
+                        maximum performance (IO component of time was significant).
+                    </li>
+                    <li>Built scripts to collect data (Power, Temperature, Voltages...) from the hardware and save to csv to track energy 
+                        usage and other metrics during inference.
+                    </li>
                 </ul>
         </article>
         <article>
@@ -41,6 +55,10 @@
             <h3>Modelling Climate Change: A Python Simulation of the Impact of Global Warming on the Atlantic Meridional
                 Overturning Circulation</h3>
                 <ul>
+                    <li>
+                        Built a simulation following a pivotal mathemetical paper on the theory of tipping points in 
+                        climate change.
+                    </li>
                     <li>This simulation models the effects of global warming on the Atlantic Meridional Overturning
                         Circulation (AMOC) using Python, providing insights into potential climate change scenarios.
                     </li>
@@ -61,7 +79,12 @@
             <h3>Robotics Competition</h3>
             <ul>
                 <li>Led firmware development in C for a robot that navigates and collects cans, showcasing autonomous
-                    movement and object handling.</li>
+                    movement and object handling.
+                </li>
+                <li>
+                    Designed and soldered circuits on boards for motor control, sensor integration with a blue pill
+                    microcontroller.  
+                </li>
             </ul>
         </article>
     </section>
