@@ -4,94 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience</title>
-    <style>
-        li {
-            white-space: nowrap;
-        }
-        .indent {
-            margin-left: 20px;
-            display: block;
-        }
-    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Jack Patchell - Work Experience</h1>
     </header>
+
     <nav>
-        <ul>
+        <ul class="page-links" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
             <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="about.html">About Me</a></li> -->
-            <li><a href="school_projects.html">School Projects</a></li>
-            <li><a href="work.html">Work Experience</a></li>
-            <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
     </nav>
+
     <section>
-        <h2>Work Experience</h2>
+
+        <!-- First Work Experience -->
         <article>
-          <h3>Cloud Software Engineering Intern – Rivian</h3>
-          <p class="indent"><strong>Location:</strong> Palo Alto, CA</p>
-          <p class="indent"><strong>Duration:</strong> May 2024 - Current</p>
-          <ul>
-            <li>
-              Working on cloud development using Kotlin, Spring, Redis, and monitoring deployments using Datadog. Working with distributed servers and horizontal
-              scaling.
-            </li>
-          </ul>
+            <h3>Cloud Software Engineering Intern – Rivian</h3>
+            <div class="details">
+                <p><strong>Location:</strong> Palo Alto, CA</p>
+                <p><strong>Duration:</strong> May 2024 - Current</p>
+            </div>
+            <ul>
+                <li>Working on cloud development using Kotlin, Spring, Redis, and monitoring deployments using Datadog. Working with distributed servers and horizontal
+                scaling.</li>
+            </ul>
         </article>
+
+        <!-- Second Work Experience -->
         <article>
-          <h3>Software Engineering Intern – Rivian</h3>
-          <p class="indent"><strong>Location:</strong> Palo Alto, CA</p>
-          <p class="indent"><strong>Duration:</strong> May 2023 - Sep 2023</p>
-          <ul>
-            <li>
-              <strong>Led Full-Stack Project</strong>: Integrated Google’s ETA estimations, reducing cloud API calls by 50% during search.
-            </li>
-            <li>
-              <strong>Reactive Programming Model</strong>: Refactored routes and pins in the map for the add-stop project, converting to a reactive programming
-               model using Kotlin flows.
-            </li>
-            <li>
-              <strong>Improved Navigation Features</strong>: Implemented navigation features that improved the user experience in 75,000 vehicles, as highlighted in the <a href="https://teslanorth.com/2023/08/17/rivian-2023-30-0-update-release-notes/" target="_blank"><br>release notes</a>.
-              (Section 2.1, 2.2)
-              <ul>
-                <li>
-                  <strong>Enhanced Search Results</strong>: Google Places’ search results now display drive times, enabling direct navigation access.
+            <h3>Software Engineering Intern – Rivian</h3>
+            <div class="details">
+                <p><strong>Location:</strong> Palo Alto, CA</p>
+                <p><strong>Duration:</strong> May 2023 - Sep 2023</p>
+            </div>
+            <ul>
+                <li><strong>Led Full-Stack Project</strong>: Integrated Google’s ETA estimations, reducing cloud API calls by 50% during search.</li>
+                <li><strong>Reactive Programming Model</strong>: Refactored routes and pins in the map for the add-stop project, converting to a reactive programming
+                model using Kotlin flows.</li>
+                <li><strong>Improved Navigation Features</strong>: Implemented navigation features that improved the user experience in 75,000 vehicles, as highlighted in the <a href="https://teslanorth.com/2023/08/17/rivian-2023-30-0-update-release-notes/" target="_blank"><br>release notes</a>. (Section 2.1, 2.2)
+                  <ul>
+                    <li><strong>Enhanced Search Results</strong>: Google Places’ search results now display drive times, enabling direct navigation access.</li>
+                    <li><strong>Charging Stops Visualization</strong>: Charging stops on a trip are highlighted with pins, indicating the planned charging time and charger speed, <br> with lightning bolt icons differentiating charging speeds.</li>
+                  </ul>
                 </li>
-                <li>
-                  <strong>Charging Stops Visualization</strong>: Charging stops on a trip are highlighted with pins, 
-                  indicating the planned charging time and charger speed, <br> with lightning bolt icons differentiating charging speeds.
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Proof of Concept Investigation</strong>: Conducted a POC investigation for the VP, leading to significant insights. Worked with APKs and android processes.
-            </li>
-            <li>
-              <strong>Optimized Cloud Searches</strong>: Created a cache to reduce cloud searches and improve response time for vehicles.
-            </li>
-          </ul>
+                <li><strong>Proof of Concept Investigation</strong>: Conducted a POC investigation for the VP, leading to significant insights. Worked with APKs and android processes.</li>
+                <li><strong>Optimized Cloud Searches</strong>: Created a cache to reduce cloud searches and improve response time for vehicles.</li>
+            </ul>
         </article>
+
+        <!-- Third Work Experience -->
         <article>
-          <h3>Software Engineering Intern – Rivian</h3>
-          <p class="indent"><strong>Location:</strong> Vancouver, BC</p>
-          <p class="indent"><strong>Duration:</strong> May 2022 - Dec 2022</p>
-          <ul>
-            <li>Implemented the vehicle side of address sharing from mobile to vehicle using Kotlin and Java highlighted in a <a href="https://teslanorth.com/2023/08/17/rivian-2023-30-0-update-release-notes/" target="_blank">software release</a>. </li>
-            <li>Worked on UI/UX, interaction with the cloud, protobufs.</li>
-            <li>Resolved 30+ bugs and introduced enhancements to the Navigation App, contributing to OTA updates for 25,000+ vehicles.</li>
-          </ul>
+            <h3>Software Engineering Intern – Rivian</h3>
+            <div class="details">
+                <p><strong>Location:</strong> Vancouver, BC</p>
+                <p><strong>Duration:</strong> May 2022 - Dec 2022</p>
+            </div>
+            <ul>
+                <li>Implemented the vehicle side of address sharing from mobile to vehicle using Kotlin and Java highlighted in a <a href="https://teslanorth.com/2023/08/17/rivian-2023-30-0-update-release-notes/" target="_blank">software release</a>.</li>
+                <li>Worked on UI/UX, interaction with the cloud, protobufs.</li>
+                <li>Resolved 30+ bugs and introduced enhancements to the Navigation App, contributing to OTA updates for 25,000+ vehicles.</li>
+            </ul>
         </article>
+
+        <!-- Fourth Work Experience -->
         <article>
-          <h3>Computer Engineering Intern – Svante</h3>
-          <p class="indent"><strong>Location:</strong> Burnaby, BC</p>
-          <p class="indent"><strong>Duration:</strong> Jan 2021 - Aug 2021</p>
-          <ul>
-            <li>Conducted time-series data analysis on a carbon capture pilot unit using SEEQ, aiding strategic decision-making.</li>
-            <li>Developed a Python-based analytics tool for quantitative analysis of material and component performance.</li>
-          </ul>
+            <h3>Computer Engineering Intern – Svante</h3>
+            <div class="details">
+                <p><strong>Location:</strong> Burnaby, BC</p>
+                <p><strong>Duration:</strong> Jan 2021 - Aug 2021</p>
+            </div>
+            <ul>
+                <li>Conducted time-series data analysis on a carbon capture pilot unit using SEEQ, aiding strategic decision-making.</li>
+                <li>Developed a Python-based analytics tool for quantitative analysis of material and component performance.</li>
+            </ul>
         </article>
     </section>
 </body>

@@ -1,0 +1,144 @@
+/* Reset and basic layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Navigation links */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Social links section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px; /* Adds space below the social links section */
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #3498db;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Page navigation section */
+.pages {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pages h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.page-links li {
+    display: inline-block;
+    margin: 0 20px; /* Add margin between each link */
+}
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Adds space below the page links section */
+}
+
+/* Flexbox for Location and Duration to be on the same line */
+.details {
+    display: flex;
+    justify-content: space-between; /* Keeps Location and Duration apart */
+    margin-left: 20px; /* Matches the bullet point indentation */
+    margin-bottom: -10px; /* Space below the details */
+}
+
+/* Bullet points, indentation, and article spacing */
+article ul {
+    margin-left: 20px; /* Indentation for bullet points */
+}
+
+article h3 {
+    margin-bottom: 15px; /* Adds space below section titles */
+}
+
+article {
+    margin-bottom: 40px; /* Ensures articles are properly spaced */
+}
+
+section {
+    padding: 20px; /* Optional: Add padding to the section */
+}
+
+/* Remove nowrap for list items */
+li {
+    white-space: normal;
+}
+
+/* Centered image */
+.centered-img {
+    display: block;
+    margin: 20px auto; /* Centers the image horizontally and adds space above and below */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    nav a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    /* Stack page links vertically for small screens */
+    .page-links {
+        flex-direction: column;
+        gap: 40px; /* Adjust gap for mobile */
+    }
+}

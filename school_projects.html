@@ -6,85 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Projects</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .indented-img {
-            margin-left: 200px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <h1>School Projects</h1>
     </header>
+
     <nav>
-        <ul>
+        <ul class="page-links" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
+
     <section>
+        <!-- First Project -->
         <article>
-            <h3>Deploying Machine Learning Networks on AMD Xilinx VCK5000 FPGA - Sponsored by MDA Space</h2>
-                <img src="images/demo_app.png"alt="Front page of demo application" 
-                style="width: 300px; height: 320px;" class="indented-img">
-                <ul>
-                    <li>Developed a GUI in Python Using Tkinter to run model predictions and labelling. Interactive as you moved
-                        your mouse over different parts of the image, showed the labels.<a
-                            href="https://github.com/jpatch22/2364Capstone" target="_blank"
-                            rel="noopener noreferrer">Github</a> </li>
-                    <li>Worked on setting up VCK5000 and figuring out how to run different models on the DPU. Worked on
-                        Quantisation, Deployment of models and more.</li>
-                    <li>Integrated Running Models on the application with the GUI. Implemented batch processing to the DPU, to demonstrate
-                        maximum performance (IO component of time was significant).
-                    </li>
-                    <li>Built scripts to collect data (Power, Temperature, Voltages...) from the hardware and save to csv to track energy 
-                        usage and other metrics during inference.
-                    </li>
-                </ul>
+            <h3>Deploying Machine Learning Networks on AMD Xilinx VCK5000 FPGA - Sponsored by MDA Space</h3>
+            <img src="images/demo_app.png" alt="Front page of demo application" style="width: 300px; height: 320px;" class="centered-img">
+            <ul>
+                <li>Developed a GUI in Python Using Tkinter to run model predictions and labelling. Interactive as you moved
+                    your mouse over different parts of the image, showed the labels. <a href="https://github.com/jpatch22/2364Capstone" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li>Worked on setting up VCK5000 and figuring out how to run different models on the DPU. Worked on
+                    Quantisation, Deployment of models and more.</li>
+                <li>Integrated Running Models on the application with the GUI. Implemented batch processing to the DPU, to demonstrate
+                    maximum performance (IO component of time was significant).</li>
+                <li>Built scripts to collect data (Power, Temperature, Voltages...) from the hardware and save to CSV to track energy 
+                    usage and other metrics during inference.</li>
+            </ul>
         </article>
+
+        <!-- Second Project -->
         <article>
-            <h3>Recreating Bat Echolocation: Environment Reconstruction with Sound Waves Using Machine Learning</h2>
-                <ul>
-                    <li>Led machine learning effort to convert audio signal inputs into 3D spatial images implementing a
-                        convolution neural network with TensorFlow.</li>
-                    <li>Leveraged Wandb for rigorous tracking and dashboard analytics, streamlining experiment
-                        record-keeping and enhancing model performance tuning.</li>
-                </ul>
+            <h3>Recreating Bat Echolocation: Environment Reconstruction with Sound Waves Using Machine Learning</h3>
+            <ul>
+                <li>Led machine learning effort to convert audio signal inputs into 3D spatial images implementing a
+                    convolution neural network with TensorFlow.</li>
+                <li>Leveraged Wandb for rigorous tracking and dashboard analytics, streamlining experiment
+                    record-keeping and enhancing model performance tuning.</li>
+            </ul>
         </article>
+
+        <!-- Third Project -->
         <article>
-            <h3>Modelling Climate Change: A Python Simulation of the Impact of Global Warming on the Atlantic Meridional
-                Overturning Circulation</h3>
-                <ul>
-                    <li>
-                        Built a simulation following a pivotal mathemetical paper on the theory of tipping points in 
-                        climate change.
-                    </li>
-                    <li>This simulation models the effects of global warming on the Atlantic Meridional Overturning
-                        Circulation (AMOC) using Python, providing insights into potential climate change scenarios.
-                    </li>
-                </ul>
+            <h3>Modelling Climate Change: A Python Simulation of the Impact of Global Warming on the Atlantic Meridional Overturning Circulation</h3>
+            <ul>
+                <li>Built a simulation following a pivotal mathematical paper on the theory of tipping points in 
+                    climate change.</li>
+                <li>This simulation models the effects of global warming on the Atlantic Meridional Overturning Circulation (AMOC) using Python, providing insights into potential climate change scenarios.</li>
+            </ul>
         </article>
+
+        <!-- Fourth Project -->
         <article>
             <h3>Machine Learning Car in Gazebo Gym with ROS</h3>
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=lXj0uXl4V1I&ab_channel=JackPatchell" target="_blank"
-                        rel="noopener noreferrer">Watch the robot in action</a> |
-                    <a href="https://github.com/jpatch22/controller" target="_blank" rel="noopener noreferrer">Github</a>
-                </li>
+                <li><a href="https://www.youtube.com/watch?v=lXj0uXl4V1I&ab_channel=JackPatchell" target="_blank" rel="noopener noreferrer">Watch the robot in action</a> |
+                    <a href="https://github.com/jpatch22/controller" target="_blank" rel="noopener noreferrer">Github</a></li>
                 <li>Designed an autonomous car solution to follow traffic regulations in ROS Gazebo simulation.</li>
                 <li>Implemented a Convolutional Neural Network using Keras for accurate license plate scanning.</li>
             </ul>
         </article>
+
+        <!-- Fifth Project -->
         <article>
             <h3>Robotics Competition</h3>
             <ul>
                 <li>Led firmware development in C for a robot that navigates and collects cans, showcasing autonomous
-                    movement and object handling.
-                </li>
-                <li>
-                    Designed and soldered circuits on boards for motor control, sensor integration with a blue pill
-                    microcontroller.  
-                </li>
+                    movement and object handling.</li>
+                <li>Designed and soldered circuits on boards for motor control, sensor integration with a blue pill microcontroller.</li>
             </ul>
         </article>
     </section>
