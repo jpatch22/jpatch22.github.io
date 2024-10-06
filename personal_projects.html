@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hide the GIF initially */
+        #spreadPayoffGif {
+            display: none;
+            position: absolute;
+            width: 400px; /* Adjust size as necessary */
+            z-index: 10; /* Ensure it appears above other content */
+        }
+    </style>
 </head>
 
 <body>
@@ -25,6 +34,9 @@
             <h3>Option Visualization Application [WIP]</h3>
             <ul>
                 <li>
+                    Developed an Option Spread Visualization Tool using Flutter for the front-end and FastAPI with Python for the back-end, integrating the Black-Scholes model for real-time option pricing based on asset price, volatility, and risk-free rate.
+                </li>
+                <li>
                     Built in Flutter an application to visualize payoffs of options strategies at expiry. <a href="https://github.com/jpatch22/optionVisualization" target="_blank" rel="noopener noreferrer">Github</a>
                     <ul>
                         <li>
@@ -35,8 +47,43 @@
                 <li>
                     Backend for calculations in Python using FastAPI to perform calculations. <a href="https://github.com/jpatch22/optionVizBackend" target="_blank" rel="noopener noreferrer">Github</a>
                 </li>
+                <li>
+                    Example GIF of spread payoff over time.
+                </li>
+                <li>
+                    <span id="clickableText" style="color: blue; cursor: pointer;">Example GIF of spread payoff over time.</span>
+                </li>
             </ul>
         </article>
+        <img id="spreadPayoffGif" src="/images/option_time_vid.gif" alt="Spread Payoff GIF">
+
+        <script>
+            const gif = document.getElementById('spreadPayoffGif');
+            const clickableText = document.getElementById('clickableText');
+    
+            clickableText.addEventListener('click', function(event) {
+                // Show the GIF
+                gif.style.display = 'block';
+    
+                // Position the GIF near the clicked text
+                const rect = clickableText.getBoundingClientRect();
+                gif.style.top = rect.bottom + 'px'; // Positioning it just below the text
+                gif.style.left = rect.left + 'px';
+    
+                // Prevent click event from propagating to the document when clicking the text
+                event.stopPropagation();
+            });
+    
+            // Listen for clicks on the document to hide the GIF
+            document.addEventListener('click', function() {
+                gif.style.display = 'none';
+            });
+    
+            // Prevent click event from hiding the GIF when clicking on the GIF itself
+            gif.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        </script>
 
         <article>
             <h3> RPE Strength Tracking Application in Flutter </h3>
